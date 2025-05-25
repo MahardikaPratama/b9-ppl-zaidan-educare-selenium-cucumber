@@ -2,6 +2,7 @@ HELP.md
 target/*
 !target/cucumber 
 !target/cucumber-reports-html
+!target/cucumber-html-reports
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
