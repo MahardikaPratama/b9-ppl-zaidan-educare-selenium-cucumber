@@ -1,5 +1,8 @@
 package com.zaidan.testng.definitions;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.testng.Assert;
 import com.zaidan.testng.actions.HomePageActions;
 import com.zaidan.testng.actions.LoginPageActions;
@@ -49,8 +52,18 @@ public class LoginPageDefinitions {
     }
 
     @And("User should be able to see navigation bar for bendahara")
-    public void user_should_see_navbar_bendahara() {
-        Assert.assertTrue(objHomePage.getSidebarDasbor().contains("Dasbor"));
+    public void user_should_see_all_sidebar_items() {
+        List<String> expectedItems = Arrays.asList(
+            "Dasbor",
+            "Tagihan Siswa",
+            "Transaksi Penerimaan Dana",
+            "Pengaturan Notifikasi",
+            "Status Pembayaran",
+            "Rekapitulasi",
+            "Progres Transaksi Penerima Dana"
+        );
+        List<String> actualItems = objHomePage.getSidebarItems();
+        Assert.assertEquals(actualItems, expectedItems, "Sidebar items do not match!");
     }
 
     @Then("User should be able to see {string} notification message")
