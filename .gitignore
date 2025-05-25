@@ -1,5 +1,5 @@
 HELP.md
-target/
+target/*
 !target/cucumber 
 !target/cucumber-reports-html
 !.mvn/wrapper/maven-wrapper.jar

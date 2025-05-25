@@ -1,7 +1,7 @@
-D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W12-13\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\locators\LogoutLocators.java
-D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W12-13\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\locators\HomePageLocators.java
-D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W12-13\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\locators\LoginPageLocators.java
-D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W12-13\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\utils\HelperClass.java
-D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W12-13\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\actions\LoginPageActions.java
-D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W12-13\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\actions\HomePageActions.java
-D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W12-13\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\actions\LogoutActions.java
+D:\Kuliah\Semester-6\PPL\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\actions\LogoutActions.java
+D:\Kuliah\Semester-6\PPL\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\actions\LoginPageActions.java
+D:\Kuliah\Semester-6\PPL\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\utils\HelperClass.java
+D:\Kuliah\Semester-6\PPL\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\locators\HomePageLocators.java
+D:\Kuliah\Semester-6\PPL\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\actions\HomePageActions.java
+D:\Kuliah\Semester-6\PPL\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\locators\LogoutLocators.java
+D:\Kuliah\Semester-6\PPL\b9-ppl-zaidan-educare-selenium-cucumber\src\main\java\com\zaidan\testng\locators\LoginPageLocators.java
