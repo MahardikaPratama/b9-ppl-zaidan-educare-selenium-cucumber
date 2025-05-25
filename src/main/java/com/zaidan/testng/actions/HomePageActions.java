@@ -19,5 +19,9 @@ public class HomePageActions {
     public String getHomePageText() {
         return homePageLocators.homePageUserName.getText();
     }
+
+    public String getSidebarDasbor() {
+        return homePageLocators.sidebarDasbor.getText();
+    }
  
 }

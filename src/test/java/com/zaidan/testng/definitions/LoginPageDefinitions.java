@@ -4,6 +4,8 @@ import org.testng.Assert;
 import com.zaidan.testng.actions.HomePageActions;
 import com.zaidan.testng.actions.LoginPageActions;
 import com.zaidan.testng.utils.HelperClass;
+
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,11 +15,14 @@ public class LoginPageDefinitions {
     LoginPageActions objLogin = new LoginPageActions();
     HomePageActions objHomePage = new HomePageActions();
 
-    @Given("User is on HRMLogin page {string}")
-    public void loginTest(String url) {
+    @Given("User has opened the browser")
+    public void user_has_opened_the_browser() {
+        HelperClass.setUpDriver();
+    }
 
+    @And("User has navigated to the login page of Education Fund Payment Management System for Zaidan Educare School app {string}")
+    public void user_has_navigated_to_login_page(String url) {
         HelperClass.openPage(url);
-
     }
 
     @When("User enters username as {string} and password as {string}")
@@ -30,15 +35,25 @@ public class LoginPageDefinitions {
 
     }
 
-    @Then("User should be able to login successfully and new page open")
-    public void verifyLogin() {
+    @And("User clicks on the login button")
+    public void clickLoginButton() {
 
-        // Verify home page
-        Assert.assertTrue(objHomePage.getHomePageText().contains("Dashboard"));
+        // Click Login button
+        objLogin.clickedLoginButton();
 
     }
 
-    @Then("User should be able to see error message {string}")
+    @Then("User is navigated to the dashboard page")
+    public void user_is_navigated_to_dashboard() {
+        Assert.assertTrue(objHomePage.getHomePageText().contains("Dasbor - Bendahara"));
+    }
+
+    @And("User should be able to see navigation bar for bendahara")
+    public void user_should_see_navbar_bendahara() {
+        Assert.assertTrue(objHomePage.getSidebarDasbor().contains("Dasbor"));
+    }
+
+    @Then("User should be able to see {string} notification message")
     public void verifyErrorMessage(String expectedErrorMessage) {
 
         // Verify home page

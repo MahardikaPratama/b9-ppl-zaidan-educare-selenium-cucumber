@@ -23,15 +23,17 @@ public class LoginPageActions {
         // Fill password
         loginPageLocators.password.sendKeys(strPassword);
 
+    }
+
+    public void clickedLoginButton() {
         // Click Login button
         loginPageLocators.login.click();
-
     }
 
     // Get the title of Login Page")
-    public String getLoginTitle() {
-        return loginPageLocators.titleText.getText();
-    }
+    // public String getLoginTitle() {
+    //     return loginPageLocators.titleText.getText();
+    // }
 
     // Get the error message of Login Page
     public String getErrorMessage() {
