@@ -68,6 +68,8 @@ b9-ppl-zaidan-educare-selenium-cucumber
 - **Selenium**: Framework automation browser
 - **Cucumber**: Penulisan skenario pengujian berbasis Gherkin
 - **TestNG**: Framework eksekusi dan laporan pengujian
+- **WebDriverManager**: Mengelola otomatisasi driver Chrome/Firefox tanpa konfigurasi manual.
+- **Net Masterthought Cucumber Reporting**: Menghasilkan laporan pengujian dalam bentuk HTML yang interaktif dan mudah dipahami
 
 ---
 
@@ -77,7 +79,9 @@ b9-ppl-zaidan-educare-selenium-cucumber
    ```bash
    mvn clean test
    ```
-3. Laporan pengujian dapat dilihat di folder `target/` atau `test-output/`.
+3. Laporan pengujian akan tersedia di:
+   - 'target/cucumber-report-html/' (Net Masterthought Report)
+   - 'test-output/' (Laporan TestNG)
 
 ---
 
