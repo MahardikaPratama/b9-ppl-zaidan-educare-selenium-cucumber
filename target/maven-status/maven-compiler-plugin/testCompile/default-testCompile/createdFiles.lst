@@ -1,1 +1,3 @@
-CucumberRunnerTests.class
+com\zaidan\testng\runner\CucumberRunnerTests.class
+com\zaidan\testng\definitions\LoginPageDefinitions.class
+com\zaidan\testng\definitions\Hooks.class

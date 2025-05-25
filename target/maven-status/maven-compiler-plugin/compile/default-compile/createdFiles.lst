@@ -1,1 +1,5 @@
-com\zaidan\Main.class
+com\zaidan\testng\actions\HomePageActions.class
+com\zaidan\testng\utils\HelperClass.class
+com\zaidan\testng\locators\LoginPageLocators.class
+com\zaidan\testng\locators\HomePageLocators.class
+com\zaidan\testng\actions\LoginPageActions.class

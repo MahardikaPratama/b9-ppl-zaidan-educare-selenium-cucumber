@@ -1,1 +1,0 @@
-# b9-ppl-zaidan-educare-selenium-cucumber
