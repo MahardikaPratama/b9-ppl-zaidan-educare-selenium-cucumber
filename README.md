@@ -1,7 +1,20 @@
-# b9-ppl-zaidan-educare-selenium-cucumber
+# 📘 **Tugas Kelompok: Pengujian Perangkat Lunak**
 
-Proyek ini merupakan automation testing untuk aplikasi Pengelolaan Dana Pendidikan Sekolah Zaidan Educare menggunakan Selenium, Cucumber, dan TestNG. Struktur direktori berikut menjelaskan pembagian file dan fungsinya:
+## 🧑‍🤝‍🧑 **Anggota Kelompok**
+| NIM        | Nama                     |
+|------------|--------------------------|
+| 221524044  | Mahardika Pratama        |
+| 221524052  | Naia Siti Az-zahra       |
+| 221524058  | Salsabil Khoirunisa      |
 
+---
+
+## 💻 **Deskripsi Proyek**
+Proyek ini merupakan web automation testing untuk aplikasi **Pengelolaan Dana Pendidikan Sekolah Zaidan Educare** menggunakan **Selenium**, **Cucumber**, dan **TestNG**. Pengujian dilakukan secara otomatis berdasarkan skenario yang ditulis dalam format Gherkin.
+
+---
+
+## 📦 **Struktur Direktori**
 ```
 b9-ppl-zaidan-educare-selenium-cucumber
 ├─ .mvn                             # Konfigurasi Maven Wrapper
@@ -45,5 +58,34 @@ b9-ppl-zaidan-educare-selenium-cucumber
 ├─ target                           # Hasil build Maven, laporan pengujian, dan file sementara
 ├─ test-output                      # Output dan laporan hasil pengujian TestNG
 └─ testng.xml                       # Konfigurasi suite TestNG
-
 ```
+
+---
+
+## 🛠️ **Tools & Dependencies**
+- **Java**: Bahasa pemrograman utama
+- **Maven**: Build automation & dependency management
+- **Selenium**: Framework automation browser
+- **Cucumber**: Penulisan skenario pengujian berbasis Gherkin
+- **TestNG**: Framework eksekusi dan laporan pengujian
+
+---
+
+## ▶️ **Cara Menjalankan Pengujian**
+1. Pastikan Java dan Maven sudah terinstal.
+2. Jalankan perintah berikut di terminal:
+   ```bash
+   mvn clean test
+   ```
+3. Laporan pengujian dapat dilihat di folder `target/` atau `test-output/`.
+
+---
+
+## 📈 **Hasil Laporan Pengujian Otomatis**
+Laporan hasil pengujian otomatis dapat diakses melalui tautan berikut:
+- [Report](https://mahardikapratama.github.io/b9-ppl-zaidan-educare-selenium-cucumber/target/cucumber-report-html/cucumber-html-reports/overview-failures.html)
+
+---
+
+## 📜 **Lisensi**
+Proyek ini dibuat untuk keperluan akademik dan tidak memiliki lisensi resmi. Silakan gunakan dengan bijak.
