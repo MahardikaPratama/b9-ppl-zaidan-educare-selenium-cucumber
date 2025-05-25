@@ -113,10 +113,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.plugin.version}</version>
                 <configuration>
-                    <testFailureIgnore>True</testFailureIgnore>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <cucumber.plugin>json:${project.build.directory}/cucumber.json</cucumber.plugin>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
 
@@ -124,25 +127,25 @@
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
                 <version>${maven.cucumber.reporting.version}</version>
-
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>test</phase>
+                        <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Cucumber Reporting Example</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+                            <projectName>Zaidan Educare Test Report</projectName>
+                            <outputDirectory>${project.basedir}/docs</outputDirectory>
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
-                                <param>**/*.json</param>
+                                <param>${project.build.directory}/cucumber.json</param>
                             </jsonFiles>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 </project>
