@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber Reporting Example</td>
         <td>1</td>
-      <td>25 May 2025, 17:44</td>
+      <td>26 May 2025, 13:59</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@InvalidCredentials</td>
-          <td      class="passed"    >3</td>
-          <td >0</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="641704100">0.641</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="809998700">0.809</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.641</span>
+  <span class="lead-duration duration">0.809</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Login with invalid credentials</span>
 
@@ -199,7 +199,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.zaidan.testng.definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">3.725</span>
+  <span class="lead-duration duration">2.428</span>
 
           </div>
 
@@ -238,9 +238,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,15 +250,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User enters username as <span class="argument">&quot;indra&quot;</span> and password as <span class="argument">&quot;admin123&quot;</span></span>
+  <span class="name">User enters username <span class="argument">&quot;indra&quot;</span> and password <span class="argument">&quot;admin123&quot;</span></span>
 
-  <span class="lead-duration duration">0.302</span>
+  <span class="lead-duration duration">0.521</span>
 
 </div>
 
@@ -285,7 +285,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User clicks on the login button</span>
 
-  <span class="lead-duration duration">0.162</span>
+  <span class="lead-duration duration">0.203</span>
 
 </div>
 
@@ -308,11 +308,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">User should be able to see <span class="argument">&quot;Incorrect username or password, please try again!&quot;</span> notification message</span>
+  <span class="name">User should be able to see <span class="argument">&quot;un-successful login&quot;</span> notification message</span>
 
-  <span class="lead-duration duration">0.176</span>
+  <span class="lead-duration duration">0.085</span>
 
 </div>
 
@@ -320,6 +320,25 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Error message does not match! expected [Username atau password salah] but found [Incorrect username or password, please try again!]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.zaidan.testng.definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:72)
+	at ✽.User should be able to see &quot;un-successful login&quot; notification message(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:22)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -339,7 +358,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -351,13 +370,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.zaidan.testng.definitions.Hooks.tearDown()</span>
 
-  <span class="lead-duration duration">1.576</span>
+  <span class="lead-duration duration">1.031</span>
 
           </div>
 

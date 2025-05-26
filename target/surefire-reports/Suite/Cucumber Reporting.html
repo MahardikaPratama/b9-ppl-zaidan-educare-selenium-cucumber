@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Cucumber Reporting</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 25 17:44:17 WIB 2025</td>
+<td>Started on:</td><td>Mon May 26 13:59:14 WIB 2025</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36130 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35629 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,48 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zaidan.testng.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: com.zaidan.testng.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login to Zaidan Educare School Application"</td>
+<td><div><pre>java.lang.AssertionError: Sidebar items do not match!: Lists differ at element [6]: Progres Transaksi Penerimaan Dana != Progres Transaksi Penerima Dana expected [Progres Transaksi Penerimaan Dana] but found [Progres Transaksi Penerima Dana]
+	at com.zaidan.testng.definitions.LoginPageDefinitions.user_should_see_all_sidebar_items(LoginPageDefinitions.java:62)
+	at ?.User should be able to see navigation bar for bendahara(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:12)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245298614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace245298614'><pre>java.lang.AssertionError: Sidebar items do not match!: Lists differ at element [6]: Progres Transaksi Penerimaan Dana != Progres Transaksi Penerima Dana expected [Progres Transaksi Penerimaan Dana] but found [Progres Transaksi Penerima Dana]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1656)
+	at com.zaidan.testng.definitions.LoginPageDefinitions.user_should_see_all_sidebar_items(LoginPageDefinitions.java:62)
+	at ?.User should be able to see navigation bar for bendahara(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:12)
+</pre></div></td>
+<td>18</td>
+<td>com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7</td></tr>
+<tr>
+<td title='com.zaidan.testng.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: com.zaidan.testng.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "Login to Zaidan Educare School Application"</td>
+<td><div><pre>java.lang.AssertionError: Error message does not match! expected [Username atau password salah] but found [Incorrect username or password, please try again!]
+	at com.zaidan.testng.definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:72)
+	at ?.User should be able to see &quot;un-successful login&quot; notification message(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:22)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1792109661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1792109661'><pre>java.lang.AssertionError: Error message does not match! expected [Username atau password salah] but found [Incorrect username or password, please try again!]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.zaidan.testng.definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:72)
+	at ?.User should be able to see &quot;un-successful login&quot; notification message(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:22)
+</pre></div></td>
+<td>6</td>
+<td>com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,19 +118,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.zaidan.testng.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: com.zaidan.testng.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login to Zaidan Educare School Application"</td>
-<td></td>
-<td>15</td>
-<td>com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7</td></tr>
-<tr>
 <td title='com.zaidan.testng.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: com.zaidan.testng.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check logout is successful with valid credentials as role "bendahara"", "Logout from Zaidan Educare School Application"</td>
 <td></td>
-<td>10</td>
-<td>com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7</td></tr>
-<tr>
-<td title='com.zaidan.testng.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: com.zaidan.testng.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "Login to Zaidan Educare School Application"</td>
-<td></td>
-<td>9</td>
+<td>8</td>
 <td>com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7</td></tr>
 </table><p>
 </body>

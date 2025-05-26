@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-25T17:44:17 WIB" name="Suite" finished-at="2025-05-25T17:44:53 WIB" duration-ms="36130">
+  <suite started-at="2025-05-26T13:59:14 WIB" name="Suite" finished-at="2025-05-26T13:59:49 WIB" duration-ms="35629">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-05-25T17:44:17 WIB" name="Cucumber Reporting" finished-at="2025-05-25T17:44:53 WIB" duration-ms="36130">
+    <test started-at="2025-05-26T13:59:14 WIB" name="Cucumber Reporting" finished-at="2025-05-26T13:59:49 WIB" duration-ms="35629">
       <class name="com.zaidan.testng.runner.CucumberRunnerTests">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-25T17:44:17 WIB" name="setUpClass" finished-at="2025-05-25T17:44:18 WIB" duration-ms="1162" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-26T13:59:14 WIB" name="setUpClass" finished-at="2025-05-26T13:59:15 WIB" duration-ms="1370" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@58a2b917]]>
+                <![CDATA[org.testng.TestRunner@e146f93]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-25T17:44:18 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-25T17:44:34 WIB" duration-ms="15094" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-26T13:59:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-26T13:59:34 WIB" duration-ms="18731" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,25 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Sidebar items do not match!: Lists differ at element [6]: Progres Transaksi Penerimaan Dana != Progres Transaksi Penerima Dana expected [Progres Transaksi Penerimaan Dana] but found [Progres Transaksi Penerima Dana]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Sidebar items do not match!: Lists differ at element [6]: Progres Transaksi Penerimaan Dana != Progres Transaksi Penerima Dana expected [Progres Transaksi Penerimaan Dana] but found [Progres Transaksi Penerima Dana]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:1656)
+at com.zaidan.testng.definitions.LoginPageDefinitions.user_should_see_all_sidebar_items(LoginPageDefinitions.java:62)
+at ✽.User should be able to see navigation bar for bendahara(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-25T17:44:34 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-25T17:44:43 WIB" duration-ms="9119" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-26T13:59:34 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-26T13:59:41 WIB" duration-ms="6708" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,10 +65,26 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message does not match! expected [Username atau password salah] but found [Incorrect username or password, please try again!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message does not match! expected [Username atau password salah] but found [Incorrect username or password, please try again!]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.zaidan.testng.definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:72)
+at ✽.User should be able to see "un-successful login" notification message(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-25T17:44:43 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-25T17:44:53 WIB" duration-ms="10612" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-26T13:59:41 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-26T13:59:49 WIB" duration-ms="8505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-25T17:44:53 WIB" name="tearDownClass" finished-at="2025-05-25T17:44:53 WIB" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.zaidan.testng.runner.CucumberRunnerTests@6f1de4c7]" started-at="2025-05-26T13:59:49 WIB" name="tearDownClass" finished-at="2025-05-26T13:59:49 WIB" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

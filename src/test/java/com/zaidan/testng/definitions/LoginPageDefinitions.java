@@ -28,15 +28,11 @@ public class LoginPageDefinitions {
         HelperClass.openPage(url);
     }
 
-    @When("User enters username as {string} and password as {string}")
+    @When("User enters username {string} and password {string}")
     public void goToHomePage(String userName, String passWord) {
-
-        // login to application
         objLogin.login(userName, passWord);
-
-        // go the next page
-
     }
+    
 
     @And("User clicks on the login button")
     public void clickLoginButton() {
@@ -60,18 +56,23 @@ public class LoginPageDefinitions {
             "Pengaturan Notifikasi",
             "Status Pembayaran",
             "Rekapitulasi",
-            "Progres Transaksi Penerima Dana"
+            "Progres Transaksi Penerimaan Dana"
         );
         List<String> actualItems = objHomePage.getSidebarItems();
         Assert.assertEquals(actualItems, expectedItems, "Sidebar items do not match!");
     }
 
     @Then("User should be able to see {string} notification message")
-    public void verifyErrorMessage(String expectedErrorMessage) {
+    public void verifyErrorMessage(String notificationType) {
+        String actualErrorMessage = objLogin.getErrorMessage();
+        String expectedErrorMessage = "Username atau password salah";
 
-        // Verify home page
-        Assert.assertEquals(objLogin.getErrorMessage(), expectedErrorMessage);
-
+        // Verifikasi pesan error untuk "un-successful login"
+        if (notificationType.equals("un-successful login")) {
+            Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "Error message does not match!");
+        } else {
+            Assert.fail("Unknown notification type: " + notificationType);
+        }
     }
 
 }

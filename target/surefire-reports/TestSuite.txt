@@ -1,4 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.74 s -- in TestSuite
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 37.63 s <<< FAILURE! -- in TestSuite
+com.zaidan.testng.runner.CucumberRunnerTests.runScenario["Login with valid credentials", "Login to Zaidan Educare School Application"](1) -- Time elapsed: 18.73 s <<< FAILURE!
+java.lang.AssertionError: Sidebar items do not match!: Lists differ at element [6]: Progres Transaksi Penerimaan Dana != Progres Transaksi Penerima Dana expected [Progres Transaksi Penerimaan Dana] but found [Progres Transaksi Penerima Dana]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1656)
+	at com.zaidan.testng.definitions.LoginPageDefinitions.user_should_see_all_sidebar_items(LoginPageDefinitions.java:62)
+	at ✽.User should be able to see navigation bar for bendahara(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:12)
+
+com.zaidan.testng.runner.CucumberRunnerTests.runScenario["Login with invalid credentials", "Login to Zaidan Educare School Application"](2) -- Time elapsed: 6.699 s <<< FAILURE!
+java.lang.AssertionError: Error message does not match! expected [Username atau password salah] but found [Incorrect username or password, please try again!]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.zaidan.testng.definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:72)
+	at ✽.User should be able to see "un-successful login" notification message(file:///D:/Kuliah/Semester-6/PPL/b9-ppl-zaidan-educare-selenium-cucumber/src/test/resources/features/LoginPage.feature:22)
+
